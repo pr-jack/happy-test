@@ -1,0 +1,65 @@
+.figure {
+
+  &__content {
+    position: relative;
+    padding-top: 50px;
+    width: 295px;
+  }
+
+  &__image {
+    position: absolute;
+    left: 127px;
+  }
+
+  &__container {
+    position: absolute;
+    top: 102px;
+    left: 75px;
+  }
+
+  &__percents {
+    position: relative;
+    padding-top: 17px;
+    text-align: center;
+
+    &--percent {
+      position: absolute;
+      top: 19px;
+      right: 36px;
+      font-size: 20px;
+    }
+
+    &--digits {
+      font-size: 47px;
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    &--title {
+      padding-bottom: 7px;
+      letter-spacing: 0.5px;
+      font-size: 20px;
+    }
+
+    &--description {
+      width: 144px;
+      font-family: "Arial", sans-serif;
+      font-size: 11px;
+      line-height: 14px;
+      color: #b7b2b2;
+
+      span {
+        font-family: "GothamPro-Bold", Arial, sans-serif;
+        font-size: 14px;
+        color: #fcd329;
+      }
+    }
+  }
+}
+
