@@ -1,0 +1,97 @@
+.people {
+  margin: 0 40px;
+  width: 260px;
+}
+
+.people-list {
+
+  &__item {
+
+    &--conteiner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+}
+
+.conteiner {
+
+  &__description {
+    width: 107px;
+    font-family: "GothamPro-Bold", Arial, sans-serif;
+  }
+
+  &__percent {
+
+    &--wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &--image {
+      width: 14px;
+    }
+  }
+
+  &__chart {
+    position: relative;
+    display: flex;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+  }
+}
+
+.chart {
+
+  &__current {
+
+    &--promo {
+      width: 20px;
+      height: 20px;
+      background-color: #70a74b;
+      z-index: 100;
+    }
+
+    &--skeptics {
+      width: 20px;
+      height: 20px;
+      background-color: #fbd229;
+      z-index: 100;
+    }
+
+    &--critic {
+      width: 20px;
+      height: 20px;
+      background-color: #ed5243;
+      z-index: 100;
+    }
+  }
+
+  &__past {
+
+    &--promo {
+      position: absolute;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #b5d0a2;
+    }
+
+    &--skeptics {
+      position: absolute;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #fae691;
+    }
+
+    &--critic {
+      position: absolute;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #f3a69e;
+    }
+  }
+}
