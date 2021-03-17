@@ -1,11 +1,15 @@
 .people {
   margin: 0 40px;
   width: 260px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
 }
 
 .people-list {
+  padding-left: 32px;
 
   &__item {
+    padding-bottom: 11px;
 
     &--conteiner {
       display: flex;
@@ -18,15 +22,21 @@
 .conteiner {
 
   &__description {
-    width: 107px;
-    font-family: "GothamPro-Bold", Arial, sans-serif;
+    width: 83px;
+    font-size: 13px;
+    font-weight: 600;
   }
 
   &__percent {
+    padding-top: 3px;
 
     &--wrapper {
       display: flex;
       justify-content: flex-end;
+    }
+
+    &--digit {
+      padding-bottom: 3px;
     }
 
     &--image {
@@ -37,6 +47,7 @@
   &__chart {
     position: relative;
     display: flex;
+    height: 33px;
     border: 1px solid #ececec;
     border-radius: 5px;
   }
@@ -45,53 +56,69 @@
 .chart {
 
   &__current {
+    position: absolute;
+    border-radius: 5px 0 0;
 
     &--promo {
-      width: 20px;
-      height: 20px;
+      top: -1px;
+      left: -1px;
+      width: 32px;
+      height: 25px;
       background-color: #70a74b;
       z-index: 100;
     }
 
     &--skeptics {
-      width: 20px;
-      height: 20px;
+      top: -1px;
+      left: -1px;
+      width: 33px;
+      height: 22px;
       background-color: #fbd229;
       z-index: 100;
     }
 
     &--critic {
-      width: 20px;
-      height: 20px;
+      top: -1px;
+      left: -1px;
+      width: 27px;
+      height: 25px;
       background-color: #ed5243;
       z-index: 100;
     }
   }
 
   &__past {
+    position: absolute;
+    border-radius: 0 0 0 5px;
 
     &--promo {
-      position: absolute;
       top: 10px;
-      width: 20px;
-      height: 20px;
+      left: -1px;
+      width: 29px;
+      height: 22px;
       background-color: #b5d0a2;
     }
 
     &--skeptics {
-      position: absolute;
-      top: 10px;
-      width: 20px;
+      left: -1px;
+      top: 12px;
+      width: 28px;
       height: 20px;
       background-color: #fae691;
     }
 
     &--critic {
-      position: absolute;
-      top: 10px;
-      width: 20px;
-      height: 20px;
+      top: 24px;
+      left: -1px;
+      width: 32px;
+      height: 8px;
       background-color: #f3a69e;
     }
+  }
+
+  &__percent {
+    width: 90px;
+    padding-top: 9px;
+    padding-left: 52px;
   }
 }

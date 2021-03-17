@@ -61,5 +61,18 @@
       }
     }
   }
+
+  &__data {
+    align-items: baseline;
+    display: flex;
+    position: absolute;
+    padding-left: 50px;
+    font-family: "Arial", sans-serif;
+    color: #70a74b;
+
+    &--triangle {
+      border: 10px solid transparent; border-bottom: 10px solid #70a74b;
+    }
+  }
 }
 
